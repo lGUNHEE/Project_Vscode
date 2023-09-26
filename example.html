@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    
+#signBox {
+    width:270px;
+    height:50px;
+    background-color:rgb(24, 71, 227);
+    text-align: center;
+    color:white;
+    font-size: 14pt;
+    border-radius: 4px;
+
+}
+
+
+html, body {
+  display:felx;
+  justify-content:center;
+  align-items: center;
+  
+}
+.text-center {
+    margin-left:150px;
+   
+}
+
+.mb-4 {
+    margin:0px 0px 10px 55px;
+}
+.form-control {
+    margin-right:100px;
+    width:270px;
+    height:70px;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+    </style>
+</head>
+<body class="text-center">
+    
+    <form class="form-signin">
+      <img class="mb-4" src="picture.svg"  width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      
+      <div id="mainblock">
+      <label for="inputEmail" class="sr-only"></label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputPassword" class="sr-only"></label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button id="signBox" type="submit">Sign in</button>
+      </div>
+      <p class="text">&copy; 2017-2022</p>
+    </form>
+    
+    
+        
+      </body>
+</html>

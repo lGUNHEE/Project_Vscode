@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function navigateTo(filename) {
+            window.location.href =filename;
+        }
+
+    </script>
+    <style>
+        
+
+        #selected {
+            background-color: #4CAF50;
+        }
+        .topic {
+            color:#4CAF50;
+        }
+
+        .menu {
+        
+            font-size: 18pt;
+           width:170px;
+           float:left;
+           color:#ffffff;
+           background-color: #555555;
+           margin:4px;
+           padding:4px;
+           cursor: pointer;
+           text-align: center;
+           list-style-type:none;
+        }
+        
+        .menu:hover {
+            background-color: black;
+        }
+        #selected:hover {
+            background-color: blacks;
+        }
+        
+        #mainContent {
+            margin-top: 80px;
+        }
+        p {
+            font-size: 15pt;
+        }
+        #sideBar {
+            margin-top: 30px;
+            background-color: #f1f1f1;
+            border : 1px solid gray;
+            padding: 5px 0px 15px 10px;
+        }
+
+        #bottom {
+            text-align: center;
+            font-size: 10pt;
+            margin-top:5px;
+        }
+
+
+    </style>
+    </head>
+    <body>
+    <div id="titleBox">
+        <h1 id="title" class="topic">Welcome to 21700490's Homepage</h1>
+    <p>Use the menu to select different Stylesheet.</p>
+    </div>
+
+    <div id="menuList">
+        <ul>
+        <li class="menu" onclick="navigateTo('style1.html')">Style sheet1</li>
+        <li class="menu">Style sheet2</li>
+        <li class="menu" id="selected" onclick="navigateTo('style2.html')">Style sheet3</li>
+        <li class="menu">Style sheet4</li>
+        <li class="menu" onclick ="navigateTo('non-style.html')">No stylesheet</li>
+        </ul>
+    </div>
+    
+        <div id="mainContent">
+            <div>
+            <h1 class="topic">Same page Different stylesheet</h1>
+            <p>This is a demonstration of how different stylesheets can change the layout of your HTML page.
+                You can change the layout of this page by selecting different stylesheets in the menu,
+                 or by selecting one of the following links:</p>
+                <a href="style1.html">style sheet1,</a> <a href="style2.html">style sheet3</a>
+            </div>
+
+        <div>
+            <h2 class="topic">No style</h2>
+            <p>This page uses DIV elements to group different sections of the HTML page.
+                 Click here to see how the page looks like with no stylesheet:</p>
+                <a href="non-style.html">No stylesheet</a>
+        </div>
+        </div>
+
+        <div id="sideBar">
+            <h3 class="topic">Side-bar</h3>
+            <p1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p1>
+                </div>
+                
+                <div id="bottom">
+
+            <p2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                 Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                  Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, 
+                  vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                   praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p2>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

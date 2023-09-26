@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function navigateTo(filename) {
+    window.location.href = filename;
+}
+    </script>
+    <style>
+
+       
+       
+        #bottom,#sideBar,#menuList,#titleBox {
+            border-radius: 4px;
+        }
+        #bottom {
+            margin-top: 30px;
+            border:1px solid gray;
+            text-align: center;
+            background-color:#f1f1f1;
+            padding:10px;
+            font-size: 12px;
+            
+            
+        }
+        #mainContent {
+            margin-top: 10px;
+            padding:10px;
+            margin:0 200px;
+            
+        }
+        body {
+            margin:20px;
+            line-height: 20px;
+        }
+
+        h1 {
+            margin:0px;
+        }
+
+        h2 {
+            font-weight:bold;
+            font-size:32px
+        }
+        .menu {
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            list-style-type: none;
+            font-size: 15pt;
+            padding: 2px;
+            cursor: pointer;
+            margin-bottom:5px;
+            padding:5px;
+            border-radius: 4px;    
+        }
+
+        .menu:hover {
+            background-color: white;
+        }
+        
+        #menuList {
+            left:0;
+            position: relative;
+            width:250px;
+            float:left;
+            margin-right: 10px;
+            padding-bottom: 100px;    
+        }
+
+        #sideBar{
+            position:absolute;
+            font-size: 15pt;
+            width:180px;
+            bottom:440px;
+            top:120px;
+            right:0;
+            margin:4px;
+            color:white;
+            background-color: #32a4e7;
+            padding:10px;
+        }
+
+        #titleBox {
+            position:relative;
+            color:white;
+            background-color:#04AA6D;
+            padding:15px;
+            border:1px;
+        }
+        
+    </style>
+    </head>
+    <body>
+    <div id="totalBox">
+    <div id="titleBox">
+        <h1>Welcome to 21700490's Homepage</h1>
+    <p>Use the menu to select different Stylesheet.</p>
+    </div>
+
+    <div id="menuList">
+        <ul>
+        <li class="menu" onclick="navigateTo('style1.html')">Style sheet1</li>
+        <li class="menu" >Style sheet2</li>
+        <li class="menu"  onclick="navigateTo('style2.html')">Style sheet3</li>
+        <li class="menu" >Style sheet4</li>
+        <li class="menu" onclick="navigateTo('non-style.html')" >No stylesheet</li>
+        </ul>
+    </div>
+    <div id="mainContent">
+        
+            <h2>Same page Different stylesheet</h1>
+            <p>This is a demonstration of how different stylesheets can change the layout of your HTML page.
+                You can change the layout of this page by selecting different stylesheets in the menu,
+                 or by selecting one of the following links:</p>
+                <a href="style1.html">style sheet1,</a> <a href="style2.html">style sheet3</a>
+        </div>
+
+        <div>
+            <h2>No style</h2>
+            <p>This page uses DIV elements to group different sections of the HTML page.
+                 Click here to see how the page looks like with no stylesheet:</p>
+                <a href="non-style.html">No stylesheet</a>
+        </div>
+        </div>
+
+        <div id="sideBar">
+            <h3>Side-bar</h3>
+            <p1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                 sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p1>
+                </div>
+            <div id="bottom">
+            <p2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                 Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                  Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, 
+                  vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                   praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p2>
+        </div>
+
+    </div>
+
+
+    
+
+
+    
+</body>
+</html>

@@ -1,11 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+            body {
+                margin-left: 40px;
+            }
+            p {
+                font-weight: bold;
+                color:blue;
+            }
+    </style>
 </head>
 <body>
-    
+    <h1 id="greeting">welcome to 21700490's form page</h1>
+    <div>
+    <p>The select element defines a drop-down list</p>
+    <form action="php">
+        <label for="grade">Choose a your grade:</label>
+        <select id="grade" name="grade">
+          <option value="fourth">4학년</option>
+          <option value="third">3학년</option>
+          <option value="second">2학년</option>
+          <option value="first">1학년</option>
+        </select>
+      </form>
+ </div>
+
+ <div>
+    <p>Input your full name</p>
+    <form action="php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+      </form>
+ </div>
+
+ <div>
+    <p>Choose your laptop</p>
+    <form action="php">
+      <input type="radio" id="mac" name="urlap" value="Mac">
+      <label for="mac">Mac book</label><br>
+      <input type="radio" id="lg" name="urlap" value="LG">
+      <label for="samsung">LG gram</label><br>
+      <input type="radio" id="ohter" name="urlap" value="Otehr">
+      <label for="other">Other products</label><br><br>
+     </form> 
+ </div>
+
+ <div>
+    <p>Input your birth day</p>
+    <form action="/action_page.php">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+      </form>
+ </div>
+
+ <div>
+    <p>What lectures do you take for this semester?</p>
+    <form action="php">
+        <input type="checkbox" id="lec1" name="lec1" value="Project">
+        <label for="lec1"> 실전 프로젝트</label><br>
+        <input type="checkbox" id="lec2" name="lec2" value="cv">
+        <label for="lec2">Computer vision</label><br>
+        <input type="checkbox" id="lec3" name="lec3" value="ss">
+        <label for="lec3">Signals and Systems</label><br>
+        <input type="checkbox" id="lec4" name="lec4" value="cal2">
+        <label for="lec4">Calaulus2</label>
+         </label>
+      </form> 
+ </div>
+
+ <div>
+    <p>Write down your purpose for this semester as you want</p>
+    <form action="php">
+        <textarea name="message" rows="20" cols="70"></textarea>
+        <br><br>
+    </form>
+ </div>
+
+ <div>
+    <p>What is your blood type?</p>
+    <form action="php">
+        <input list="blood" name="blood">
+        <datalist id="blood">
+          <option value="A">
+          <option value="B">
+          <option value="O">
+          <option value="AB">
+        </datalist>
+        </form>
+ </div>
+
+ <div>
+    <p>What is favorite food?</p>
+    <form action="php">
+        <label for="foods">Choose a car:</label>
+        <select name="foods" id="foods">
+          <optgroup label="한식">
+            <option value="kr1">김치찌개</option>
+            <option value="kr2">된장찌개</option>
+            <option value="kr3">갈비찜</option>
+          </optgroup>
+          <optgroup label="중식">
+            <option value="ch1">짜장면</option>
+            <option value="ch2">짬뽕</option>
+            <option value="ch3">탕수육</option>
+          </optgroup>
+          <optgroup label="양식">
+            <option value="am1">스파게티</option>
+            <option value="am2">까르보나라</option>
+            <option value="am3">알리올리오</option>
+          </optgroup>
+        </select>
+        <br><br>
+      </form>
+ </div>
+
+
 </body>
 </html>
